@@ -17,4 +17,4 @@ jobs:
 
     - name: Deploy to EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ubuntu@51.21.136.40 'cd /home/ubuntu/Jun220Portfolio && git pull && pm2 restart app.js'
+        ssh -o StrictHostKeyChecking=no ubuntu@51.21.136.40 'cd /home/ubuntu/Jun220Portfolio && git pull && source ~/.bashrc; pm2 restart app.js'
